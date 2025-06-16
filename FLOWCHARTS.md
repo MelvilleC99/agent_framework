@@ -15,60 +15,60 @@
 
 ### 1.1 High-Level System Architecture
 ```mermaid
-graph TB
-    subgraph Client Layer
+flowchart TB
+    subgraph Client_Layer
         C1[Web Client]
         C2[Mobile Client]
         C3[API Client]
     end
 
-    subgraph API Layer
+    subgraph API_Layer
         A1[FastAPI Server]
         A2[Middleware]
         A3[Route Handlers]
     end
 
-    subgraph Orchestration Layer
+    subgraph Orchestration_Layer
         O1[Coordinator]
         O2[Context Manager]
         O3[Session Manager]
     end
 
-    subgraph Agent Layer
+    subgraph Agent_Layer
         AG1[ChatGPT Agent]
         AG2[DeepSeek Agent]
         AG3[Custom Agents]
     end
 
-    subgraph Tool Layer
+    subgraph Tool_Layer
         T1[Tool Registry]
         T2[Tool Executor]
         T3[Tool Discovery]
     end
 
-    subgraph Data Layer
+    subgraph Data_Layer
         D1[Database]
         D2[Cache]
         D3[Vector Store]
     end
 
-    subgraph Monitoring Layer
+    subgraph Monitoring_Layer
         M1[Metrics]
         M2[Logging]
         M3[Alerting]
     end
 
-    Client Layer --> API Layer
-    API Layer --> Orchestration Layer
-    Orchestration Layer --> Agent Layer
-    Agent Layer --> Tool Layer
-    Tool Layer --> Data Layer
-    Monitoring Layer --> Client Layer
-    Monitoring Layer --> API Layer
-    Monitoring Layer --> Orchestration Layer
-    Monitoring Layer --> Agent Layer
-    Monitoring Layer --> Tool Layer
-    Monitoring Layer --> Data Layer
+    Client_Layer --> API_Layer
+    API_Layer --> Orchestration_Layer
+    Orchestration_Layer --> Agent_Layer
+    Agent_Layer --> Tool_Layer
+    Tool_Layer --> Data_Layer
+    Monitoring_Layer --> Client_Layer
+    Monitoring_Layer --> API_Layer
+    Monitoring_Layer --> Orchestration_Layer
+    Monitoring_Layer --> Agent_Layer
+    Monitoring_Layer --> Tool_Layer
+    Monitoring_Layer --> Data_Layer
 ```
 
 ### 1.2 Component Dependencies
