@@ -1,0 +1,34 @@
+DOWNTIME ROOT CAUSE ANALYSIS TOOL
+
+PURPOSE:
+This tool performs advanced root cause analysis (RCA) on machine downtime incidents. It goes beyond simple data retrieval to identify patterns, correlations, and underlying causes of equipment failures.
+
+WHEN TO USE:
+- User asks to "find patterns" in downtime
+- User wants to "analyze causes" of failures  
+- User asks "why machines keep failing"
+- User wants "root cause analysis"
+- User asks to "identify recurring issues"
+
+DO NOT USE WHEN:
+- User just wants to see downtime records (use downtime_query_tool)
+- User wants simple statistics (use downtime_statistics_tool)
+- User asks for future predictions (use predictive_maintenance_tool)
+
+ANALYSIS CAPABILITIES:
+- Identifies recurring failure modes across machines
+- Correlates downtime with maintenance schedules
+- Analyzes environmental factors (temperature, usage patterns)
+- Detects equipment degradation trends
+- Suggests preventive actions based on patterns
+
+INPUT GUIDANCE:
+- machine_id: Specific machine or "all" for fleet analysis
+- analysis_depth: "basic" for quick patterns, "deep" for comprehensive RCA
+- time_period: Longer periods (30+ days) provide better pattern detection
+
+TYPICAL USER SCENARIOS:
+"Why does Machine A keep breaking down?" → Use this tool
+"What's causing our high downtime in Building 3?" → Use this tool  
+"Find patterns in our equipment failures" → Use this tool
+"Show me downtime for last week" → Use downtime_query_tool instead

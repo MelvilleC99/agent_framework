@@ -1,0 +1,27 @@
+from setuptools import setup, find_packages
+
+setup(
+    name="qc_agent_backend",
+    version="0.1.0",
+    packages=find_packages(),
+    install_requires=[
+        "pandas==2.2.1",
+        "numpy==1.26.4",
+        "scikit-learn==1.4.2",
+        "firebase-admin==6.4.0",
+        "python-dotenv==1.0.0",
+        "psycopg2-binary==2.9.9",
+        "fastapi==0.115.9",
+        "uvicorn==0.34.2",
+        "langchain==0.3.25",
+        "langchain-community==0.3.22",
+        "langchain-core==0.3.58",
+        "openai==1.74.0",
+        "pydantic==2.11.3",
+        "supabase==1.0.3",
+        "python-dateutil==2.9.0.post0",
+        "requests==2.32.3",
+        "tqdm==4.67.1"
+    ],
+    python_requires=">=3.8",
+) 
